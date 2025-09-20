@@ -59,7 +59,7 @@ export default function SEO({
             "email": "shyam+coworking@readybytes.in",
             "url": url,
             "image": image,
-            "priceRange": "₹3000/month"
+            "priceRange": "₹200-3000"
           })
         }}
       />

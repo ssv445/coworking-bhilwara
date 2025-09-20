@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Pricing | Ready Coworking',
-  description: 'Simplified Price get you these benefits at ₹3,000/month in Bhilwara. Computer professionals only workspace with comprehensive facilities.',
+  description: 'Flexible pricing options starting from ₹200/day, ₹1,000/week, or ₹3,000/month in Bhilwara. Computer professionals only workspace with comprehensive facilities.',
 };
 
 export default function PricingPage() {
@@ -14,10 +14,10 @@ export default function PricingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-900 mb-4 heading-font">
-                Pricing
+                Flexible Pricing Plans
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Simplified Price get you these benefits.
+                Choose the plan that works best for you - daily, weekly, or monthly.
                 Available to computer professionals only.
               </p>
             </div>

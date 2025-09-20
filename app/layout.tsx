@@ -10,7 +10,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "CoWorking Bhilwara - Premium Workspace for Professionals",
   description:
-    "Premium coworking space for computer professionals in Bhilwara, Rajasthan. Modern facilities, high-speed internet, and productive environment at ₹3,000/month.",
+    "Premium coworking space for computer professionals in Bhilwara, Rajasthan. Modern facilities, high-speed internet, and productive environment. Flexible pricing from ₹200/day.",
 }
 
 export default function RootLayout({
