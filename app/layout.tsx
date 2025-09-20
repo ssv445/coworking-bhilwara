@@ -4,13 +4,15 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import WhatsAppButton from "@/components/WhatsAppButton"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "ready/> Coworking Space - Bhilwara",
+  title: "CoWorking Bhilwara - Premium Workspace for Professionals",
   description:
-    "The Best Office Space in Bhilwara to co-work with great peers. Professional, Clean, Comfortable and Vetted Colleagues.",
-  generator: "v0.app",
+    "Premium coworking space for computer professionals in Bhilwara, Rajasthan. Modern facilities, high-speed internet, and productive environment at ₹3,000/month.",
 }
 
 export default function RootLayout({
@@ -21,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+        <Header />
         <Suspense fallback={null}>{children}</Suspense>
+        <Footer />
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>

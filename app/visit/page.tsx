@@ -1,149 +1,99 @@
-import { Header } from "@/components/header"
-import { Contact } from "@/components/contact"
-import { Button } from "@/components/ui/button"
+import VisitForm from '@/components/VisitForm';
+import { MapPin, Phone, Clock } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Schedule a Visit | CoWorking Bhilwara',
+  description: 'Schedule a visit to our coworking space in Bhilwara. See our facilities and meet our community before joining.',
+};
 
 export default function VisitPage() {
   return (
-    <main className="min-h-screen">
-      <Header />
-
-      {/* Hero Section for Visit */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">Visit Our Space</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Experience the ready/&gt; coworking difference firsthand. Schedule a tour and see why Bhilwara's
-            professionals choose us as their workspace.
-          </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Schedule a Tour
-          </Button>
-        </div>
-      </section>
-
-      {/* Location & Hours */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Find Us</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
-                  <p className="text-muted-foreground">
-                    123 Business District
-                    <br />
-                    Bhilwara, Rajasthan 311001
-                    <br />
-                    India
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-                  <p className="text-muted-foreground">+91 98765 43210</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                  <p className="text-muted-foreground">hello@readycoworking.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Operating Hours</h2>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Monday - Friday</span>
-                  <span className="font-medium">8:00 AM - 10:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Saturday</span>
-                  <span className="font-medium">9:00 AM - 8:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Sunday</span>
-                  <span className="font-medium">10:00 AM - 6:00 PM</span>
-                </div>
-              </div>
-              <div className="mt-6 p-4 bg-primary/10 rounded-lg">
-                <p className="text-sm text-muted-foreground">
-                  <strong>24/7 Access:</strong> Available for monthly and annual members with keycard access.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tour Information */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">What to Expect</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">👋</span>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Welcome & Introduction</h3>
-              <p className="text-muted-foreground">
-                Meet our community manager who will introduce you to the ready/&gt; philosophy and culture.
+    <main className="min-h-screen bg-gray-50">
+        <div className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                Schedule Your Visit
+              </h1>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Come and see our facilities in person. We'll show you around and answer any questions you have.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🏢</span>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Visit Information */}
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Visit Information</h2>
+
+                <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">What to Expect</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Tour of all facilities and amenities</li>
+                    <li>• Meet our community and staff</li>
+                    <li>• See available desks and meeting rooms</li>
+                    <li>• Get answers to all your questions</li>
+                    <li>• Learn about our pricing and membership options</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Visit Details</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <Clock className="h-5 w-5 text-cyan-500 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-gray-900">Duration</p>
+                        <p className="text-gray-600">30-45 minutes</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="h-5 w-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-gray-900">Location</p>
+                        <p className="text-gray-600">
+                          67, EAST EXTENSION,<br />
+                          SUBHASH NAGAR, BHILWARA,<br />
+                          RAJASTHAN, INDIA PIN - 311001
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-cyan-500 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-gray-900">Contact</p>
+                        <a
+                          href="tel:+919782049418"
+                          className="text-gray-600 hover:text-cyan-500 transition-colors"
+                        >
+                          +91 9782049418
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Facility Tour</h3>
-              <p className="text-muted-foreground">
-                Explore all our workspaces, meeting rooms, and amenities. See where you'll be most productive.
-              </p>
+
+              {/* Visit Form */}
+              <div>
+                <VisitForm />
+              </div>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">☕</span>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Coffee & Chat</h3>
-              <p className="text-muted-foreground">
-                Enjoy complimentary refreshments while we discuss membership options and answer your questions.
+
+            {/* Additional Information */}
+            <div className="mt-12 bg-cyan-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Important Note
+              </h3>
+              <p className="text-gray-700 text-center max-w-3xl mx-auto">
+                Our coworking space is exclusively for computer professionals. Please ensure you meet this criteria
+                before scheduling your visit. We look forward to welcoming you to our community!
               </p>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Directions */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">Getting Here</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">By Car</h3>
-              <p className="text-muted-foreground mb-4">
-                Located in the heart of Bhilwara's business district with ample parking available. Use GPS coordinates:
-                25.3407° N, 74.6306° E
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Free parking for members</li>
-                <li>• Visitor parking available</li>
-                <li>• Wheelchair accessible entrance</li>
-              </ul>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Public Transport</h3>
-              <p className="text-muted-foreground mb-4">
-                Easily accessible by local buses and auto-rickshaws. The nearest bus stop is just 2 minutes walk away.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Bus stop: Business District (2 min walk)</li>
-                <li>• Railway station: 15 minutes by auto</li>
-                <li>• Airport: 45 minutes by taxi</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Contact />
-    </main>
-  )
+      </main>
+  );
 }
