@@ -54,7 +54,7 @@ export default function VisitForm() {
       {submitStatus === 'success' && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
           <p className="text-green-800 text-center">
-            Thank you! Your visit request has been submitted successfully. We'll contact you soon.
+            Thank you! Your visit request has been submitted successfully. We&apos;ll contact you soon.
           </p>
         </div>
       )}

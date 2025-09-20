@@ -17,7 +17,7 @@ export default function VisitPage() {
                 Schedule Your Visit
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Come and see our facilities in person. We'll show you around and answer any questions you have.
+                Come and see our facilities in person. We&apos;ll show you around and answer any questions you have.
               </p>
             </div>
 

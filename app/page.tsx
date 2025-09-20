@@ -26,7 +26,7 @@ export default function Home() {
                 The Best Office Space in Bhilwara to co-work with great peers.
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Get a Professional Space for CoWorking In Bhilwara. Peaceful, Clean, Comfortable and Vetted Colleagues. It's time to dive deep into the work.
+                Get a Professional Space for CoWorking In Bhilwara. Peaceful, Clean, Comfortable and Vetted Colleagues. It&apos;s time to dive deep into the work.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -103,7 +103,7 @@ export default function Home() {
                 CONTACT US
               </h2>
               <p className="text-lg text-gray-600">
-                Come and see our facilities in person. We're located in the heart of Bhilwara.
+                Come and see our facilities in person. We&apos;re located in the heart of Bhilwara.
               </p>
             </div>
 
@@ -173,7 +173,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Join?</h3>
                   <p className="text-gray-600 mb-6">
-                    Schedule a visit to see our facilities and meet our community. We're excited to welcome you!
+                    Schedule a visit to see our facilities and meet our community. We&apos;re excited to welcome you!
                   </p>
                   <Link
                     href="/visit"
