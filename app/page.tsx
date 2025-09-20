@@ -22,9 +22,9 @@ export default function Home() {
                   className="h-24 w-auto"
                 />
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 heading-font">
                 The Best Office Space in Bhilwara to co-work with great peers.
-              </h2>
+              </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 Get a Professional Space for CoWorking In Bhilwara. Peaceful, Clean, Comfortable and Vetted Colleagues. It's time to dive deep into the work.
               </p>
@@ -53,7 +53,7 @@ export default function Home() {
         <section id="culture" className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 heading-font">
                 Culture
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
@@ -99,7 +99,7 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 heading-font">
                 CONTACT US
               </h2>
               <p className="text-lg text-gray-600">

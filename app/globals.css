@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
+
+/* Custom font definitions to match original Wix site */
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Avenir Light'), local('AvenirLight'),
+       url('https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVQUwaEQbjA.woff2') format('woff2');
+  font-display: swap;
+}
 
 :root {
   --background: oklch(1 0 0);
@@ -123,5 +134,36 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Avenir', 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* Headings use Courier New like the original site */
+  h1, h2, h3, .heading-font {
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  /* Body text and navigation use Avenir/sans-serif */
+  p, span, a, button, .body-font {
+    font-family: 'Avenir', 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* Navigation specific styling */
+  nav a {
+    font-family: 'Avenir', 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
