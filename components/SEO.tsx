@@ -55,7 +55,7 @@ export default function SEO({
               "postalCode": "311001",
               "addressCountry": "IN"
             },
-            "telephone": "+919782049418",
+            "telephone": "+919116011130",
             "email": "shyam+coworking@readybytes.in",
             "url": url,
             "image": image,
