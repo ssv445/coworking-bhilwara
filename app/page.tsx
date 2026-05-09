@@ -6,7 +6,8 @@ import Facilities from '@/components/dev/Facilities';
 import Pricing from '@/components/dev/Pricing';
 import Faq from '@/components/dev/Faq';
 import Founder from '@/components/dev/Founder';
-import VisitCTA from '@/components/dev/VisitCTA';
+import VisitOutro from '@/components/dev/VisitOutro';
+import PhadBorder from '@/components/dev/PhadBorder';
 
 export const metadata: Metadata = {
   title: 'Ready CoWork Bhilwara — a quiet floor for shipping code',
@@ -19,12 +20,14 @@ export default function Home() {
     <main>
       <Hero />
       <Members />
+      <PhadBorder />
       <Founder />
       <Photos />
+      <PhadBorder />
       <Facilities />
       <Pricing />
       <Faq />
-      <VisitCTA />
+      <VisitOutro />
     </main>
   );
 }

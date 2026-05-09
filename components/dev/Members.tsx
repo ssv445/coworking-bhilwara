@@ -53,7 +53,7 @@ export default function Members() {
         </ol>
 
         <p className="section-foot dim">
-          None of these need a coworking space. They just don&apos;t happen at home.
+          And if your home office is already perfect — the lunch table still isn&apos;t in it.
         </p>
       </div>
     </section>

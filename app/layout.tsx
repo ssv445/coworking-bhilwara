@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Nav from "../components/dev/Nav"
 import Footer from "../components/dev/Footer"
+import VisitModal from "../components/dev/VisitModal"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Nav />
         <Suspense fallback={null}>{children}</Suspense>
         <Footer />
+        <VisitModal />
         <Analytics />
       </body>
     </html>

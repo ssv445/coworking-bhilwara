@@ -266,6 +266,18 @@
 [data-theme="github"]   { --accent: var(--accent-override, #1f883d); }
 [data-theme="mono"]     { --accent: var(--accent-override, #ffffff); }
 
+/* Phad palette — pulled from a real Bhilwara Phad scroll.
+   Used as accents only (borders, footer trim, callout dots).
+   Never replaces the primary dark theme. */
+html[data-theme] {
+  --phad-red:     #C81E1E;
+  --phad-mustard: #E8B82A;
+  --phad-green:   #2D7A3E;
+  --phad-blue:    #1E5BA8;
+  --phad-cream:   #F5E6C8;
+  --phad-ink:     #1a1a1a;
+}
+
 html[data-theme] body {
   background: var(--bg);
   color: var(--text);
@@ -477,7 +489,9 @@ html[data-theme] a:hover { color: var(--accent); }
   font-weight: 600;
 }
 [data-theme="mono"] .dev-btn-primary { color: #0a0a0a; }
+html[data-theme] a.dev-btn-primary:hover,
 .dev-btn-primary:hover { color: #0a0e14; filter: brightness(1.08); transform: translateY(-1px); }
+html[data-theme="mono"] a.dev-btn-primary:hover,
 [data-theme="mono"] .dev-btn-primary:hover { color: #0a0a0a; }
 
 .dev-btn-wa {
@@ -706,6 +720,25 @@ html[data-theme] a:hover { color: var(--accent); }
   color: var(--text);
 }
 
+.price-card-flex { background: var(--surface-2, var(--surface)); }
+.price-flex-body { margin-top: 16px; font-size: 13px; line-height: 1.55; }
+.price-flex-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.price-flex-list li {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  font-size: 13px;
+}
+.price-flex-list li strong { color: var(--text); font-weight: 600; }
+.price-flex-note { margin-top: 14px; font-size: 12px; }
+
 .faq-list {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -765,11 +798,11 @@ html[data-theme] a:hover { color: var(--accent); }
 }
 
 .dev-footer {
-  border-top: 1px solid var(--border);
   background: var(--surface);
-  padding: 56px 0 32px;
+  padding: 0 0 32px;
   font-size: 13px;
 }
+.dev-footer > .wrap { padding-top: 56px; }
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -849,7 +882,8 @@ html[data-theme] a:hover { color: var(--accent); }
   .faq-a { padding: 0 16px 0 42px; font-size: 12.5px; }
   .faq-item[data-open="true"] .faq-a { padding: 0 16px 16px 42px; }
 
-  .dev-footer { padding: 40px 0 24px; font-size: 12.5px; }
+  .dev-footer { padding: 0 0 24px; font-size: 12.5px; }
+  .dev-footer > .wrap { padding-top: 40px; }
   .footer-grid { gap: 28px; margin-bottom: 32px; }
   .footer-bottom { font-size: 11px; }
 }
@@ -1147,3 +1181,159 @@ html[data-theme] a:hover { color: var(--accent); }
   .host-fact-k { font-size: 12px; }
   .host-shipped-item { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ===== Visit modal + form ===== */
+html.modal-open { overflow: hidden; }
+
+.visit-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.visit-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 20, 25, 0.45);
+  backdrop-filter: blur(3px);
+}
+.visit-modal-card {
+  position: relative;
+  background: var(--bg, #fff);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 28px 24px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+.visit-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: 0;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 4px 10px;
+}
+.visit-modal-close:hover { color: var(--text); }
+.visit-modal-title {
+  font-size: 22px;
+  margin: 8px 0 4px;
+  letter-spacing: -0.01em;
+}
+.visit-modal-sub { font-size: 13px; margin-bottom: 18px; }
+.visit-modal-foot { font-size: 12px; margin-top: 18px; text-align: center; }
+.visit-modal-foot a { color: var(--accent); text-decoration: none; }
+.visit-modal-foot a:hover { text-decoration: underline; }
+
+.visit-form { display: grid; gap: 14px; }
+.visit-form-row { display: grid; gap: 6px; }
+.visit-form-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono, monospace);
+  letter-spacing: 0.01em;
+}
+.visit-form-input {
+  font: inherit;
+  font-family: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface, #fff);
+  color: var(--text);
+  font-size: 14px;
+  width: 100%;
+}
+.visit-form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(46, 160, 67, 0.18);
+}
+.visit-form-textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+.visit-form-intents { display: flex; flex-wrap: wrap; gap: 6px; }
+.visit-form-intent {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  background: var(--surface);
+  user-select: none;
+}
+.visit-form-intent input { display: none; }
+.visit-form-intent.is-active {
+  border-color: var(--accent);
+  background: rgba(46, 160, 67, 0.06);
+}
+.visit-form-intent-label { color: var(--text); font-weight: 500; }
+.visit-form-intent-tag { font-size: 11px; }
+.visit-form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  margin-top: 4px;
+}
+.visit-form-hint { font-size: 11.5px; line-height: 1.5; }
+.dev-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+@media (max-width: 560px) {
+  .visit-modal { padding: 12px; }
+  .visit-modal-card { padding: 22px 18px 18px; }
+  .visit-modal-title { font-size: 19px; }
+}
+
+/* ── Phad border — geometric divider inspired by Bhilwara Phad scrolls ── */
+.phad-border {
+  width: 100%;
+  line-height: 0;
+  display: block;
+  /* tiny breathing room so it doesn't ram into the section above/below */
+  margin: 8px 0;
+}
+.phad-border svg { display: block; }
+.phad-border-thin { margin: 0; }
+
+/* When used inside footer top */
+.dev-footer .phad-border { margin: 0; }
+
+/* Phad attribution — tiny line, footer only */
+.phad-attr {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+}
+.phad-attr .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--phad-red);
+  box-shadow: 0 0 0 2px var(--phad-mustard);
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .phad-border svg { height: 18px; }
+  .phad-border { margin: 4px 0; }
+}
+

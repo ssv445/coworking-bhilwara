@@ -9,7 +9,17 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     a: (
       <>
         Computer professionals only — devs, designers, data folks, hardware people, founders building tech. We vet for
-        cultural fit. <code>--strict</code>.
+        cultural fit, not seniority. 1-2yr juniors are welcome — most members started at that point in their career.
+      </>
+    ),
+  },
+  {
+    q: 'invoice.gst',
+    sub: 'Can I get a GST invoice for reimbursement?',
+    a: (
+      <>
+        Yes — monthly invoice in your company&apos;s name. Message the host with your GSTIN before your first month and
+        the invoice format gets confirmed up front. Most members use it for employer reimbursement.
       </>
     ),
   },
@@ -38,7 +48,8 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: 'Where do meetings happen?',
     a: (
       <>
-        3 dedicated rooms. Take calls there, not at your desk. Book ad-hoc on the WhatsApp group; it&apos;s usually free.
+        3 dedicated rooms. Take calls there, not at your desk. No booking system — peek in, if it&apos;s free it&apos;s
+        yours. With 32 desks and 13 of us regular, all three rooms taken at once is rare.
       </>
     ),
   },
@@ -62,8 +73,8 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: 'Is tea and coffee included?',
     a: (
       <>
-        Optional, paid, real. We have a kitchen and someone who runs it. Monthly opt-in. The tea is decent, the coffee
-        depends on your standards.
+        Tea is complimentary — real chai, brewed in the kitchen, included in your seat. Coffee is optional, monthly
+        opt-in (the coffee depends on your standards).
       </>
     ),
   },
@@ -74,6 +85,28 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
       <>
         6KV UPS holds the floor for ~8 hours. Desks, lights, wifi, cable — all stay up. AC, microwave, and printer take
         the hit. Long enough that we&apos;ve never lost a workday.
+      </>
+    ),
+  },
+  {
+    q: 'trial.dayPass',
+    sub: 'Can I try a day before committing?',
+    a: (
+      <>
+        Yes. Message the host, walk in for a working day — your bike, your laptop, our wifi and chair. No charge for
+        the first day. If it fits, you pick: monthly seat (₹3,000), week pass (₹1,000), or drop in by the day (₹300).
+        If it doesn&apos;t, no awkward conversation.
+      </>
+    ),
+  },
+  {
+    q: 'summer.heatHandling',
+    sub: 'How does the floor handle Bhilwara summers?',
+    a: (
+      <>
+        AC pre-cooled by 9am so you don&apos;t walk in to a furnace. Covered bike parking — your seat doesn&apos;t
+        scorch through the lunch break. Cold RO water on tap. May–June is the most-loved months on the floor, not the
+        most dreaded.
       </>
     ),
   },

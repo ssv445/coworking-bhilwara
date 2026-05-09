@@ -1,8 +1,10 @@
 import Logo from './Logo';
+import PhadBorder from './PhadBorder';
 
 export default function Footer() {
   return (
     <footer className="dev-footer">
+      <PhadBorder />
       <div className="wrap">
         <div className="footer-grid">
           <div>
@@ -65,7 +67,10 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© Ready CoWork Bhilwara · all rights reserved</span>
-          <span>built for techies, by techies · v8.2.0</span>
+          <span className="phad-attr">
+            <span className="dot" aria-hidden="true"></span>
+            border inspired by Bhilwara&apos;s Phad scrolls
+          </span>
         </div>
       </div>
     </footer>

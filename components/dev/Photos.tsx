@@ -1,35 +1,35 @@
 const PHOTOS: { src: string; alt: string; caption: string; tall?: boolean }[] = [
   {
     src: '/images/facilities-page/energetic-environment.jpg',
-    alt: 'The floor mid-morning — most desks taken, quiet hum',
-    caption: 'mid-morning · most seats taken · quiet hum',
+    alt: 'Members at their desks — laptops, monitors, headphones, "Make Something People Want" poster',
+    caption: 'a Wednesday afternoon at the floor',
     tall: true,
   },
   {
-    src: '/images/facilities-page/desk.jpg',
-    alt: 'A reserved desk with monitor and chair',
-    caption: 'one of 32 reserved desks',
+    src: '/images/facilities-page/structured-cabling.jpg',
+    alt: 'Cisco network rack with structured cabling',
+    caption: 'gigabit · Cat6 to every desk · not wifi-only',
   },
   {
-    src: '/images/facilities-page/meeting-rooms.jpg',
-    alt: 'Meeting room with table and chairs',
-    caption: 'one of 3 meeting rooms',
+    src: '/images/facilities-page/ups.png',
+    alt: '6KV UPS unit with battery bank',
+    caption: '6KV UPS · 8h runtime · power cuts don’t end your workday',
   },
   {
-    src: '/images/facilities-page/brainstorm-boards.jpg',
-    alt: 'Whiteboards for messy thinking',
-    caption: '6 whiteboards · for messy thinking',
+    src: '/images/facilities-page/locker.jpg',
+    alt: 'Personal lockers numbered 23 and 24 with keys',
+    caption: 'your locker · stop carrying the monitor home',
   },
   {
     src: '/images/facilities-page/library.jpg',
-    alt: 'Library nook on the floor',
-    caption: 'a quiet corner to read',
+    alt: 'Bookshelf with mixed Hindi and English titles, programming books',
+    caption: 'the shared shelf · Linux, HTML5, Manorma, 50 Shades — yes, all of it',
     tall: true,
   },
   {
     src: '/images/facilities-page/parking.jpg',
-    alt: 'Bike parking inside the compound',
-    caption: 'bikes inside · cars roadside',
+    alt: 'Bike parking inside the compound, greenery around',
+    caption: 'inside the gate · bikes safe · plants real',
   },
 ];
 

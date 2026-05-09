@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { WA_URL } from './whatsapp';
 
 export default function Nav() {
   return (
@@ -17,9 +16,9 @@ export default function Nav() {
           <a href="#faq">faq</a>
           <a href="#visit">visit</a>
         </div>
-        <a className="nav-cta" href={WA_URL} target="_blank" rel="noopener noreferrer">
+        <a className="nav-cta" href="#visit">
           <span className="dot"></span>
-          WhatsApp host
+          Say hi
         </a>
       </div>
     </nav>
