@@ -15,7 +15,7 @@ export const INSTALL_BLOCK: TermBlock = {
 };
 
 export const SSH_BLOCK: TermBlock = {
-  cmd: 'ssh shyam@cowork-bhilwara',
+  cmd: 'ssh host@cowork-bhilwara',
   lines: [
     { kind: 'out', text: '<span class="muted">Last login: today, by 13 humans</span>' },
     { kind: 'out', text: 'Welcome to <span class="hi">Ready CoWork</span> · Bhilwara' },

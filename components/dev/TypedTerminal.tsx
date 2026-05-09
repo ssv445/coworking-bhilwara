@@ -80,7 +80,7 @@ export default function TypedTerminal({
         return (
           <Fragment key={bi}>
             <span className="term-line prompt">
-              <span className="u">shyam@bhilwara</span>:
+              <span className="u">host@bhilwara</span>:
               <span className="p">~/cowork</span>
               <span className="arr">$</span>
               <span className="cmd">{cmdText}</span>
@@ -100,7 +100,7 @@ export default function TypedTerminal({
               phase.line >= b.lines.length &&
               bi === blocks.length - 1 && (
                 <span className="term-line prompt">
-                  <span className="u">shyam@bhilwara</span>:
+                  <span className="u">host@bhilwara</span>:
                   <span className="p">~/cowork</span>
                   <span className="arr">$</span>
                   <span style={{ color: 'var(--accent)' }}>▋</span>

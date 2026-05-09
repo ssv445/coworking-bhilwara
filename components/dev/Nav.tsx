@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Logo from './Logo';
 import { WA_URL } from './whatsapp';
 
 export default function Nav() {
@@ -7,9 +6,8 @@ export default function Nav() {
     <nav className="dev-nav">
       <div className="wrap nav-inner">
         <Link href="/" className="nav-brand" style={{ textDecoration: 'none' }}>
-          <Logo size={28} />
           <span>
-            <span className="prompt-user">~</span>/<span className="prompt-path">cowork-bhilwara</span>
+            <span className="prompt-user">~</span>/<span className="prompt-path">ready-coworking-bhilwara</span>
           </span>
           <span className="caret"></span>
         </Link>
@@ -21,7 +19,7 @@ export default function Nav() {
         </div>
         <a className="nav-cta" href={WA_URL} target="_blank" rel="noopener noreferrer">
           <span className="dot"></span>
-          WhatsApp Shyam
+          WhatsApp host
         </a>
       </div>
     </nav>
