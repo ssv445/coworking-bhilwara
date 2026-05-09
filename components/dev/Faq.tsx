@@ -1,9 +1,6 @@
 'use client';
 
 import { useState, type ReactNode } from 'react';
-import Window from './Window';
-import TypedTerminal from './TypedTerminal';
-import { MANIFESTO_BLOCK } from './terminals';
 
 const FAQ: { q: string; sub: string; a: ReactNode }[] = [
   {
@@ -88,15 +85,14 @@ export default function Faq() {
     <section id="faq" className="section">
       <div className="wrap">
         <div className="section-label">faq</div>
-        <h2 className="section-title display">man cowork(8)</h2>
+        <h2 className="section-title display">
+          The questions you&apos;d ask
+          <br />
+          <span className="muted">before signing anything.</span>
+        </h2>
         <p className="section-sub">
-          The questions you&apos;d ask before signing anything. Real answers, no marketing.
+          Real answers, no marketing. Tap one to expand.
         </p>
-        <div style={{ marginBottom: 32 }}>
-          <Window title="cat — manifesto.txt" tag="how we work">
-            <TypedTerminal blocks={[MANIFESTO_BLOCK]} restart={false} />
-          </Window>
-        </div>
         <div className="faq-list">
           {FAQ.map((item, i) => (
             <div key={i} className="faq-item" data-open={open === i}>

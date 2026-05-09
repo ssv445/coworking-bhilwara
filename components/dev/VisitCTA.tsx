@@ -10,8 +10,8 @@ export default function VisitCTA() {
           ./say_hi
         </h2>
         <p className="section-sub" style={{ marginInline: 'auto', textAlign: 'center' }}>
-          Drop the host a WhatsApp. We&apos;ll reply with a time to come by, see the floor, and meet whoever&apos;s around.
-          Bring your laptop if you want to test the internet.
+          One WhatsApp away. Pick a time, walk in, sit at any free seat for 30 minutes,
+          meet whoever&apos;s around. Bring your laptop — test the wifi yourself.
         </p>
 
         <div style={{ maxWidth: 720, marginInline: 'auto' }}>
@@ -19,16 +19,14 @@ export default function VisitCTA() {
             <div className="term-line prompt">
               <span className="u">you</span>:<span className="p">~</span>
               <span className="arr">$</span>
-              <span className="cmd">whatsapp shyam --about=cowork</span>
+              <span className="cmd">whatsapp host --visit=this-week</span>
             </div>
             <div className="term-line out" style={{ marginTop: 6 }}>
               <span className="muted">→ opens WhatsApp with a pre-filled message</span>
             </div>
             <div className="term-line out" style={{ marginTop: 14 }}>
               <span className="hi">
-                {
-                  '"Hey, I am interested to know more about the CoWorking place, 🤔 may I visit the place tomorrow around 4-5 PM?"'
-                }
+                {'"Hi — saw the site. Can I drop by this week to see the floor?"'}
               </span>
             </div>
           </Window>

@@ -592,19 +592,17 @@ html[data-theme] a:hover { color: var(--accent); }
   color: var(--text-muted);
   overflow: hidden;
 }
-.statusbar-track {
+.statusbar-static {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0;
   padding: 0;
-  white-space: nowrap;
-  animation: dev-marquee 60s linear infinite;
 }
-@keyframes dev-marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.status-hint { font-size: 11px; }
+@media (max-width: 720px) {
+  .statusbar { font-size: 11px; }
 }
-@media (prefers-reduced-motion: reduce) { .statusbar-track { animation: none; } }
 .status-cell {
   display: inline-flex;
   align-items: center;
@@ -954,4 +952,292 @@ html[data-theme] a:hover { color: var(--accent); }
   .seat-grid { grid-template-columns: repeat(6, 1fr); }
   .price-tag { font-size: 11.5px; }
   .hero-meta { font-size: 11.5px; }
+}
+
+/* ============================================
+   Photos section — visual proof of the floor
+   ============================================ */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  gap: 12px;
+}
+.photo-card {
+  position: relative;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.photo-card.tall {
+  grid-row: span 2;
+}
+.photo-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--surface-2, #f5f5f5);
+}
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.photo-frame img:not([src]),
+.photo-frame img[src=""] {
+  display: none;
+}
+.photo-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  gap: 8px;
+  background:
+    repeating-linear-gradient(45deg, transparent 0 8px, rgba(0,0,0,0.02) 8px 16px),
+    var(--surface-2, #f5f5f5);
+}
+.photo-card figcaption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 3;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 4px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 720px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+    gap: 8px;
+  }
+  .photo-card.tall { grid-row: span 2; }
+  .photo-card figcaption { font-size: 10px; padding: 3px 6px; }
+}
+@media (max-width: 420px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+  .photo-card.tall { grid-row: span 1; }
+}
+
+/* ============================================
+   Why-leave-home — life-pain shift list
+   ============================================ */
+.changes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+.change-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.change-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+}
+.change-lead {
+  margin: 0 0 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  font-weight: 600;
+}
+.change-body {
+  margin: 0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.section-foot {
+  margin-top: 28px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+@media (max-width: 720px) {
+  .change-item { grid-template-columns: 36px 1fr; gap: 12px; padding: 20px 0; }
+  .change-num { font-size: 11px; padding-top: 6px; }
+  .change-lead { font-size: 18px; }
+  .change-body { font-size: 13px; }
+}
+
+/* ============================================
+   Host card — Shyam, on the floor with you
+   ============================================ */
+.host-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: start;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  padding: 28px;
+}
+.host-portrait {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--surface-2, #f5f5f5);
+}
+.host-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.host-portrait-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background:
+    repeating-linear-gradient(45deg, transparent 0 8px, rgba(0,0,0,0.02) 8px 16px),
+    var(--surface-2, #f5f5f5);
+}
+.host-initial {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+.host-portrait-cap {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+}
+.host-body { display: flex; flex-direction: column; }
+.host-name {
+  margin: 0 0 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.host-line {
+  margin: 0 0 12px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+}
+.host-facts {
+  margin: 14px 0 0;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.host-fact {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 12px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+}
+.host-fact-k {
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.host-fact-v {
+  margin: 0;
+  color: var(--text);
+}
+.host-shipped {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.host-shipped-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+.host-shipped-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.host-shipped-item {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 13px;
+}
+.host-shipped-name {
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.host-shipped-note {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.host-shipped-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 12px;
+}
+.host-shipped-link:hover { text-decoration: underline; }
+.host-more {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.host-more a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.host-more a:hover { text-decoration: underline; }
+@media (max-width: 720px) {
+  .host-card { grid-template-columns: 1fr; gap: 20px; padding: 22px; }
+  .host-portrait { max-width: 200px; margin: 0 auto; }
+  .host-name { font-size: 22px; }
+  .host-line { font-size: 13px; }
+  .host-fact { grid-template-columns: 1fr; gap: 2px; padding-bottom: 6px; }
+  .host-fact-k { font-size: 12px; }
+  .host-shipped-item { grid-template-columns: 1fr; gap: 2px; }
 }

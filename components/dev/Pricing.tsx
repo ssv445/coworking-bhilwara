@@ -13,8 +13,9 @@ export default function Pricing() {
         <div className="section-label">pricing</div>
         <h2 className="section-title display">One number. No fine print.</h2>
         <p className="section-sub">
-          ₹3,000/month covers everything below. Tea&apos;s extra (it&apos;s real tea). No contract, no
-          lock-in — pay for the current month, walk away.
+          ₹3,000/month · ~₹100/day · cheaper than two cafe lunches. Covers everything below.
+          Tea&apos;s extra (it&apos;s real tea). No contract, no lock-in — pay for the month,
+          walk away anytime.
         </p>
 
         <div className="price-grid">

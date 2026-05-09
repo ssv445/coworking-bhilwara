@@ -17,8 +17,8 @@ export default function SystemSection({
           <div className="section-label">system</div>
           <h2 className="section-title display">Live, right now.</h2>
           <p className="section-sub">
-            Connect over ssh and the floor introduces itself. The bar below it scrolls the same data,
-            second by second.
+            Connect over ssh and the floor introduces itself. The bar below shows the same numbers
+            in plain English.
           </p>
           <Window title="ssh — bhilwara" tag="live">
             <TypedTerminal blocks={[SSH_BLOCK]} restart={false} />
