@@ -1,27 +1,27 @@
 const CHANGES: { lead: string; body: string }[] = [
   {
-    lead: 'You bathe before nine.',
-    body: 'When the bike has to leave the gate, showing up to your own life in pajamas stops feeling normal.',
+    lead: 'Pajamas stop feeling normal.',
+    body: 'The bike has to leave the gate at nine. So you wear actual clothes. You shower without negotiating with yourself. The week starts looking like a week again.',
   },
   {
-    lead: 'Your family stops asking what you do all day.',
-    body: 'You leave at 9. You come back at 7. That looks like a job. They start respecting it. So do you.',
+    lead: 'Camera on. Mic clean. Every time.',
+    body: 'No “one second, not ready yet.” No toddler in the demo. No pressure cooker on the customer call. The team sees a colleague — not a corner of your bedroom.',
   },
   {
-    lead: 'The kids are in school. The Zoom call is not.',
-    body: 'No toddler in the standup, no doorbell on the demo, no pressure cooker in the customer call.',
+    lead: 'Your family quietly starts calling it work.',
+    body: 'You leave at nine. You come back at seven. That looks like a job, so it gets treated like one. The question “what do you actually do all day” stops being a question.',
   },
   {
-    lead: 'The laptop closes at 7.',
-    body: 'You can’t carry the desk home. Work ends when you walk out the gate. The bed stops being your office.',
+    lead: 'The laptop closes at seven.',
+    body: 'You can’t carry the desk home. Work ends when you cross the gate. The bedroom goes back to being a bedroom — and the bed stops being your office.',
   },
   {
-    lead: 'Lunch is with adults who code for a living.',
-    body: 'Not LIC sales, not the relative asking about marriage. Someone who knows what useEffect does, and who will help you debug it.',
+    lead: 'Lunch is with your people again.',
+    body: 'Folks who debate IPL between deploys, who already have an opinion on Cursor vs Claude Code, who send you the same HN thread you were about to send them. You stop translating yourself at the table.',
   },
   {
-    lead: 'You have an address that means something.',
-    body: '"67 East Extension, Subhash Nagar" on your invoice. Clients see a workplace. So does the bank, the visa officer, your in-laws.',
+    lead: 'You start finishing things again.',
+    body: 'No “bhaiya ek minute” every fifteen minutes. Two-hour blocks that don’t get sliced by the doorbell, the cook, the courier. The PR that sat open all week ships before lunch.',
   },
 ];
 
@@ -36,8 +36,8 @@ export default function Members() {
           <span className="muted">working from home.</span>
         </h2>
         <p className="section-sub">
-          Six things that quietly shift in the first month. The desk fixes them
-          before the desk fixes anything else.
+          Six things that quietly shift in the first month. The desk doesn&apos;t
+          write your code — it just removes the noise that was getting in the way.
         </p>
 
         <ol className="changes-list">

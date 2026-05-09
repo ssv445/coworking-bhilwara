@@ -1,12 +1,4 @@
 export default function Pricing() {
-  const TAKEN = [0, 1, 2, 4, 5, 7, 9, 10, 12, 15, 17, 19, 22];
-  const YOU = 26;
-  const seats = Array.from({ length: 32 }, (_, i) => {
-    if (TAKEN.includes(i)) return 'taken';
-    if (i === YOU) return 'you';
-    return 'free';
-  });
-
   return (
     <section id="pricing" className="section">
       <div className="wrap">
@@ -83,58 +75,6 @@ export default function Pricing() {
             </div>
           </div>
 
-          <div className="seat-meter">
-            <h3 className="display">19 of 32 seats open</h3>
-            <p className="sub">A live-ish snapshot of the floor. Hover a seat — yours could be the highlighted one.</p>
-            <div className="seat-grid" role="img" aria-label="Seat availability map">
-              {seats.map((s, i) => (
-                <div
-                  key={i}
-                  className={`seat ${s}`}
-                  title={
-                    s === 'taken'
-                      ? `seat ${i + 1} · taken`
-                      : s === 'you'
-                        ? `seat ${i + 1} · could be yours`
-                        : `seat ${i + 1} · free`
-                  }
-                ></div>
-              ))}
-            </div>
-            <div className="legend">
-              <span>
-                <i className="free"></i> free (19)
-              </span>
-              <span>
-                <i className="taken"></i> taken (13)
-              </span>
-              <span>
-                <i className="you"></i> could be yours
-              </span>
-            </div>
-            <div
-              style={{
-                borderTop: '1px dashed var(--border-strong)',
-                marginTop: 22,
-                paddingTop: 18,
-                fontSize: 12,
-                color: 'var(--text-muted)',
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-                <span>founded</span>
-                <strong className="tabnums">2019</strong>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-                <span>average tenure</span>
-                <strong className="tabnums">14 months</strong>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span>avg outage downtime</span>
-                <strong className="tabnums">~3 min/mo</strong>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

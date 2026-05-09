@@ -1,5 +1,4 @@
-// Photo placeholder — drop /public/images/host/shyam.jpg and flip HAS_PHOTO.
-const HAS_PHOTO = false;
+const HAS_PHOTO = true;
 
 const FACTS: { k: string; v: string }[] = [
   { k: 'role', v: 'host · full-stack dev · founder, Ready Bytes' },

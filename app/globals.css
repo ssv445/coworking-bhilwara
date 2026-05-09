@@ -584,42 +584,6 @@ html[data-theme] a:hover { color: var(--accent); }
   padding: 0 6px; border-radius: 3px;
 }
 
-.statusbar {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
-  font-size: 12px;
-  color: var(--text-muted);
-  overflow: hidden;
-}
-.statusbar-static {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0;
-  padding: 0;
-}
-.status-hint { font-size: 11px; }
-@media (max-width: 720px) {
-  .statusbar { font-size: 11px; }
-}
-.status-cell {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 22px;
-  border-right: 1px solid var(--border);
-}
-.status-cell .dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--ok);
-  box-shadow: 0 0 6px var(--ok);
-}
-.status-cell .dot.warn { background: var(--warn); box-shadow: 0 0 6px var(--warn); }
-.status-cell strong { color: var(--text); font-weight: 600; }
-.status-cell .lbl { color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; }
-
 .facility-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -676,9 +640,8 @@ html[data-theme] a:hover { color: var(--accent); }
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-}
-@media (min-width: 980px) {
-  .price-grid { grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: start; }
+  max-width: 720px;
+  margin-inline: auto;
 }
 
 .price-card {
@@ -742,58 +705,6 @@ html[data-theme] a:hover { color: var(--accent); }
   border: 1px solid var(--border);
   color: var(--text);
 }
-
-.seat-meter {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--surface);
-  padding: 24px;
-}
-.seat-meter h3 { margin: 0 0 4px; font-size: 14px; letter-spacing: 0.02em; }
-.seat-meter .sub { font-size: 12px; color: var(--text-muted); margin-bottom: 18px; }
-.seat-grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 6px;
-  margin-bottom: 18px;
-}
-.seat {
-  aspect-ratio: 1;
-  border-radius: 3px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  position: relative;
-}
-.seat.taken {
-  background: var(--surface-3);
-  border-color: var(--border-strong);
-}
-.seat.taken::after {
-  content: '';
-  position: absolute;
-  inset: 30%;
-  background: var(--text-dim);
-  border-radius: 50%;
-}
-.seat.you {
-  background: color-mix(in oklab, var(--accent) 30%, var(--surface));
-  border-color: var(--accent);
-}
-.seat-meter .legend {
-  display: flex;
-  gap: 16px;
-  font-size: 11px;
-  color: var(--text-muted);
-}
-.seat-meter .legend span { display: inline-flex; align-items: center; gap: 6px; }
-.seat-meter .legend i {
-  width: 10px; height: 10px;
-  border-radius: 2px;
-  display: inline-block;
-}
-.seat-meter .legend .free { background: var(--surface-2); border: 1px solid var(--border); }
-.seat-meter .legend .taken { background: var(--surface-3); border: 1px solid var(--border-strong); }
-.seat-meter .legend .you { background: var(--accent); }
 
 .faq-list {
   border: 1px solid var(--border);
@@ -921,9 +832,6 @@ html[data-theme] a:hover { color: var(--accent); }
   .dev-btn { padding: 10px 14px; font-size: 13px; }
   .hero-meta { gap: 12px 18px; font-size: 12px; }
 
-  .status-cell { padding: 12px 16px; gap: 6px; }
-  .status-cell .lbl { font-size: 10px; }
-
   .section-title { font-size: clamp(26px, 7vw, 34px); }
   .section-sub { font-size: 14px; margin-bottom: 32px; }
 
@@ -933,10 +841,9 @@ html[data-theme] a:hover { color: var(--accent); }
   .facility-card .meta { font-size: 11px; }
   .facility-card .badge { top: 12px; right: 12px; font-size: 9px; padding: 2px 6px; }
 
-  .price-card, .seat-meter { padding: 22px 18px; }
+  .price-card { padding: 22px 18px; }
   .price-headline .num { font-size: 44px; }
   .price-headline .num::before { font-size: 24px; vertical-align: 10px; }
-  .seat-grid { grid-template-columns: repeat(8, 1fr); gap: 4px; }
 
   .faq-q { padding: 14px 16px; font-size: 13px; }
   .faq-a { padding: 0 16px 0 42px; font-size: 12.5px; }
@@ -949,7 +856,6 @@ html[data-theme] a:hover { color: var(--accent); }
 
 @media (max-width: 480px) {
   .facility-grid { grid-template-columns: 1fr 1fr; }
-  .seat-grid { grid-template-columns: repeat(6, 1fr); }
   .price-tag { font-size: 11.5px; }
   .hero-meta { font-size: 11.5px; }
 }

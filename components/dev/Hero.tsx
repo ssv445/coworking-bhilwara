@@ -10,8 +10,8 @@ export default function Hero() {
             <span className="hl-accent">in the morning.</span>
           </h1>
           <p className="hero-sub">
-            Bath. Breakfast. The bike ride to <strong>67 East Extension</strong>. A reserved desk
-            that&apos;s yours. 13 neighbors who code for a living. Laptop closes at 7 — you go home
+            Out the door by nine. The bike ride to <strong>67 East Extension</strong>. A desk with
+            your name on it. Neighbors who code for a living. Laptop closes at 7 — you go home
             a person, not a screen. <strong>₹3,000/month. No contract.</strong>
           </p>
           <div className="hero-ctas">

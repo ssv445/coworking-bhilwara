@@ -28,8 +28,8 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: `What's the internet usage policy?`,
     a: (
       <>
-        Fair use. Stream code, not Netflix. The pipe is shared between 32 humans; please don&apos;t hog it for movie
-        marathons or {'{not-safe-for-work}'} content.
+        Fair use. Stream code, not Netflix. The pipe is shared between 32 desks — please leave the movie
+        marathons and personal downloads for home.
       </>
     ),
   },
@@ -55,7 +55,7 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
   {
     q: 'printer.quota',
     sub: 'How much printing is included?',
-    a: <>10 pages/month free, then ₹2/page. Toner costs money; we&apos;re honest about it.</>,
+    a: <>10 pages/month free, then ₹2/page. Just covering toner — no margin in printing.</>,
   },
   {
     q: 'tea.coffee.included',
