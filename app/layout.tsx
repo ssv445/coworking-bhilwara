@@ -2,15 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import WhatsAppButton from "../components/WhatsAppButton"
+import Nav from "../components/dev/Nav"
+import Footer from "../components/dev/Footer"
+import VisitModal from "../components/dev/VisitModal"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "CoWorking Bhilwara - Premium Workspace for Professionals",
+  title: "Ready CoWork Bhilwara — for developers",
   description:
-    "Premium coworking space for computer professionals in Bhilwara, Rajasthan. Modern facilities, high-speed internet, and productive environment. Flexible pricing from ₹200/day.",
+    "A 32-seat coworking floor in Bhilwara for computer professionals. Reserved desk, gigabit cable, 8h UPS, hot RO water. ₹3,000/month, no lock-in.",
 }
 
 export default function RootLayout({
@@ -19,12 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="github" data-density="roomy">
       <body className="antialiased">
-        <Header />
+        <Nav />
         <Suspense fallback={null}>{children}</Suspense>
         <Footer />
-        <WhatsAppButton />
+        <VisitModal />
         <Analytics />
       </body>
     </html>

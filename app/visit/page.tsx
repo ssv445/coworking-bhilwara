@@ -65,10 +65,10 @@ export default function VisitPage() {
                       <div>
                         <p className="font-medium text-gray-900">Contact</p>
                         <a
-                          href="tel:+919782049418"
+                          href="tel:+919116011130"
                           className="text-gray-600 hover:text-cyan-500 transition-colors"
                         >
-                          +91 9782049418
+                          +91 9116011130
                         </a>
                       </div>
                     </div>

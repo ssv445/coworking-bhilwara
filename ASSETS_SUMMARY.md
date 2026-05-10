@@ -72,7 +72,7 @@ All icons created in the brand color `#0275D8`:
 
 #### Contact Information
 - **Address**: 67, EAST EXTENSION, SUBHASH NAGAR, BHILWARA, RAJASTHAN, INDIA PIN - 311001
-- **Phone**: +919782049418
+- **Phone**: +919116011130
 - **WhatsApp**: Available with pre-filled message
 
 #### Navigation Menu

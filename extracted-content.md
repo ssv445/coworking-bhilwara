@@ -52,7 +52,7 @@
 
 **Contact Options:**
 - Schedule A Visit
-- Call (+919782049418)
+- Call (+919116011130)
 - WhatsApp
 
 ### Footer
@@ -157,7 +157,7 @@
 67, EAST EXTENSION,SUBHASH NAGAR,
 BHILWARA,RAJASTHAN, INDIA PIN - 311001
 
-**Phone:** +919782049418
+**Phone:** +919116011130
 
 **WhatsApp Link:** Available with pre-filled message for inquiries
 
