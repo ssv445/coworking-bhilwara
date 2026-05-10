@@ -8,8 +8,9 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: `Who's allowed to join?`,
     a: (
       <>
-        Computer professionals only — devs, designers, data folks, hardware people, founders building tech. We vet for
-        cultural fit, not seniority. 1-2yr juniors are welcome — most members started at that point in their career.
+        Computer professionals only — devs, designers, data folks, hardware people, founders building tech. The bar is
+        about how you work on the floor: quiet focus, respectful calls, headphones on, no guest traffic. Seniority
+        doesn&apos;t matter — 1–2yr juniors are welcome and most members started at that point in their career.
       </>
     ),
   },

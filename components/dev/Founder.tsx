@@ -4,7 +4,7 @@ const HAS_PHOTO = true;
 const FACTS: { k: string; v: string }[] = [
   { k: 'role', v: 'host · still writing code most days' },
   { k: 'sits_in_seat', v: '14 · same chair you’d get' },
-  { k: 'vets_every_member', v: 'personally · cultural fit, not seniority' },
+  { k: 'vets_every_member', v: 'personally · quiet work, no guest traffic' },
   { k: 'replies_in', v: 'usually under 2 hours, Mon–Sat' },
 ];
 

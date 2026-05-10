@@ -1,27 +1,27 @@
 const CHANGES: { lead: string; body: string }[] = [
   {
-    lead: 'Pajamas stop feeling normal.',
-    body: 'The bike has to leave the gate at nine. So you wear actual clothes. You shower without negotiating with yourself. The week starts looking like a week again.',
+    lead: 'Mornings get a shape again.',
+    body: 'The bike leaves the gate at nine. There&apos;s a reason to be ready by then. The week starts looking like a week — Mondays feel like Mondays, Saturday feels earned.',
   },
   {
     lead: 'Camera on. Mic clean. Every time.',
-    body: 'No “one second, not ready yet.” No toddler in the demo. No pressure cooker on the customer call. The team sees a colleague — not a corner of your bedroom.',
+    body: 'No “one second, not ready yet.” No toddler in the demo. No pressure cooker on the customer call. The team sees a colleague — and you stop apologising for the background.',
   },
   {
-    lead: 'Your family quietly starts calling it work.',
-    body: 'You leave at nine. You come back at seven. That looks like a job, so it gets treated like one. The question “what do you actually do all day” stops being a question.',
+    lead: 'Work and home stop sharing the same room.',
+    body: 'You leave at nine. You come back at seven. The boundary is a real gate, not a closed door someone keeps opening. The dinner table goes back to being a dinner table.',
   },
   {
     lead: 'The laptop closes at seven.',
-    body: 'You can’t carry the desk home. Work ends when you cross the gate. The bedroom goes back to being a bedroom — and the bed stops being your office.',
+    body: 'You can&apos;t carry the desk home. Work ends when you cross the gate. The bedroom goes back to being a bedroom — and the bed stops being your office.',
   },
   {
     lead: 'Lunch is with your people again.',
-    body: 'Folks who debate IPL between deploys, who already have an opinion on Cursor vs Claude Code, who send you the same HN thread you were about to send them. You stop translating yourself at the table.',
+    body: 'Folks who debate IPL between deploys, who send you the same HN thread you were about to send them, who get the joke when prod breaks on a Friday evening. You stop translating yourself at the table.',
   },
   {
     lead: 'You start finishing things again.',
-    body: 'No “bhaiya ek minute” every fifteen minutes. Two-hour blocks that don’t get sliced by the doorbell, the cook, the courier. The PR that sat open all week ships before lunch.',
+    body: 'No “bhaiya ek minute” every fifteen minutes. Two-hour blocks that don&apos;t get sliced by the doorbell, the cook, the courier. The PR that sat open all week ships before lunch.',
   },
 ];
 
