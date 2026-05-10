@@ -44,9 +44,9 @@ export default function PhadBorder({ variant = 'full' }: { variant?: Variant }) 
             {/* diamond — center */}
             <polygon points="24,5.5 30,11 24,16.5 18,11" fill="var(--phad-red)" />
             <polygon points="24,7.8 27.5,11 24,14.2 20.5,11" fill="var(--phad-mustard)" />
-            {/* dots — flank */}
-            <circle cx="6" cy="11" r="1.6" fill="var(--phad-green)" />
-            <circle cx="42" cy="11" r="1.6" fill="var(--phad-blue)" />
+            {/* dots — flank, mustard rings */}
+            <circle cx="6" cy="11" r="1.6" fill="var(--phad-mustard)" />
+            <circle cx="42" cy="11" r="1.6" fill="var(--phad-mustard)" />
             {/* thin ink rule */}
             <rect y="18.4" width="48" height="0.6" fill="var(--phad-ink)" />
             {/* bottom red band */}

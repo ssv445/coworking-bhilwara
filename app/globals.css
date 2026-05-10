@@ -198,10 +198,10 @@
   --punctuation: #8b949e;
   --comment: #6e7681;
   --warn: #f0b429;
-  --ok: #4ade80;
+  --ok: #E8B82A;
   --error: #f87171;
   --grid-dot: rgba(255, 255, 255, 0.04);
-  --selection: rgba(74, 222, 128, 0.25);
+  --selection: rgba(232, 184, 42, 0.28);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.4);
   --tag-bg: rgba(255, 255, 255, 0.04);
@@ -225,10 +225,10 @@
   --punctuation: #59636e;
   --comment: #6e7781;
   --warn: #9a6700;
-  --ok: #1a7f37;
+  --ok: #B89A1F;
   --error: #d1242f;
   --grid-dot: rgba(0, 0, 0, 0.06);
-  --selection: rgba(26, 127, 55, 0.18);
+  --selection: rgba(200, 30, 30, 0.16);
   --shadow-sm: 0 1px 2px rgba(31, 35, 40, 0.05);
   --shadow-md: 0 8px 24px rgba(31, 35, 40, 0.08);
   --tag-bg: rgba(0, 0, 0, 0.04);
@@ -262,8 +262,9 @@
   color-scheme: dark;
 }
 
-[data-theme="terminal"] { --accent: var(--accent-override, #4ade80); }
-[data-theme="github"]   { --accent: var(--accent-override, #1f883d); }
+/* Brand accent → Phad red. Mono theme stays B&W. */
+[data-theme="terminal"] { --accent: var(--accent-override, #C81E1E); }
+[data-theme="github"]   { --accent: var(--accent-override, #C81E1E); }
 [data-theme="mono"]     { --accent: var(--accent-override, #ffffff); }
 
 /* Phad palette — pulled from a real Bhilwara Phad scroll.
@@ -298,6 +299,10 @@ html[data-theme] {
 }
 html[data-theme] ::selection { background: var(--selection); }
 html[data-theme] a:hover { color: var(--accent); }
+/* Kill browser-default purple on visited links */
+html[data-theme] a:visited { color: inherit; }
+html[data-theme] a.dev-btn-primary:visited { color: #fff; }
+html[data-theme="mono"] a.dev-btn-primary:visited { color: #0a0a0a; }
 
 [data-density="compact"] body { font-size: 14px; }
 
@@ -484,13 +489,13 @@ html[data-theme] a:hover { color: var(--accent); }
 .dev-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 .dev-btn-primary {
   background: var(--accent);
-  color: #0a0e14;
+  color: #fff;
   border-color: var(--accent);
   font-weight: 600;
 }
 [data-theme="mono"] .dev-btn-primary { color: #0a0a0a; }
 html[data-theme] a.dev-btn-primary:hover,
-.dev-btn-primary:hover { color: #0a0e14; filter: brightness(1.08); transform: translateY(-1px); }
+.dev-btn-primary:hover { color: #fff; filter: brightness(1.08); transform: translateY(-1px); }
 html[data-theme="mono"] a.dev-btn-primary:hover,
 [data-theme="mono"] .dev-btn-primary:hover { color: #0a0a0a; }
 
