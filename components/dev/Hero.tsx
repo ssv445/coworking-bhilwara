@@ -9,9 +9,9 @@ export default function Hero() {
             <span className="hl-accent">Co-work to break the loop.</span>
           </h1>
           <p className="hero-sub">
-            A bike ride to <strong>67 East Extension</strong>. A desk with your name on it.
-            Neighbors who code for a living. A meeting room when you need one. A laptop that
-            closes at seven and stays here till morning. <strong>₹3,000/month. No contract.</strong>
+            A desk with your name on it. Neighbors who code for a living. A meeting room when
+            you need one. A laptop that closes at seven and stays here till morning.{' '}
+            <strong>₹3,000/month. No contract.</strong>
           </p>
           <div className="hero-ctas">
             <a className="dev-btn dev-btn-primary" href="#visit">
