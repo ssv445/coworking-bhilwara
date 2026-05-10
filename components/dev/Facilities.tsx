@@ -22,7 +22,7 @@ export default function Facilities() {
           <span className="muted">Nothing you don&apos;t.</span>
         </h2>
         <p className="section-sub">
-          A floor wired so the work is the only hard thing about your day.
+          An office wired so the work is the only hard thing about your day.
         </p>
 
         <div>

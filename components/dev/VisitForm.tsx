@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { WA_NUMBER } from './whatsapp';
 
 const INTENTS: { id: string; label: string; tag: string }[] = [
-  { id: 'visit', label: 'Visit the floor', tag: 'walking in this week' },
+  { id: 'visit', label: 'Visit the office', tag: 'walking in this week' },
   { id: 'daypass', label: 'Day / week pass', tag: 'drop-in pricing' },
   { id: 'monthly', label: 'Reserved seat', tag: 'monthly · ₹3,000' },
   { id: 'question', label: 'Just a question', tag: 'no commitment' },
@@ -15,7 +15,7 @@ export default function VisitForm() {
   const [query, setQuery] = useState('');
   const [intent, setIntent] = useState<string>('visit');
 
-  const intentLabel = INTENTS.find((i) => i.id === intent)?.label ?? 'Visit the floor';
+  const intentLabel = INTENTS.find((i) => i.id === intent)?.label ?? 'Visit the office';
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();

@@ -15,7 +15,7 @@ export default function Hero() {
           </p>
           <div className="hero-ctas">
             <a className="dev-btn dev-btn-primary" href="#visit">
-              Visit the floor this week
+              Visit the office this week
               <span aria-hidden="true">→</span>
             </a>
             <a className="dev-btn" href="#photos">see inside →</a>

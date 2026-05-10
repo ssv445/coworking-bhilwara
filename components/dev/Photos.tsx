@@ -2,7 +2,7 @@ const PHOTOS: { src: string; alt: string; caption: string; tall?: boolean }[] = 
   {
     src: '/images/facilities-page/energetic-environment.jpg',
     alt: 'Members at their desks — laptops, monitors, headphones, "Make Something People Want" poster',
-    caption: 'a Wednesday afternoon at the floor',
+    caption: 'a Wednesday afternoon at the office',
     tall: true,
   },
   {
@@ -44,7 +44,7 @@ export default function Photos() {
           <span className="muted">when you walk in.</span>
         </h2>
         <p className="section-sub">
-          Real shots of the floor. No stock, no glow-up.
+          Real shots of the office. No stock, no glow-up.
         </p>
 
         <div className="photo-grid">

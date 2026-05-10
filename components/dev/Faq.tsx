@@ -9,7 +9,7 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     a: (
       <>
         Computer professionals only — devs, designers, data folks, hardware people, founders building tech. The bar is
-        about how you work on the floor: quiet focus, respectful calls, headphones on, no guest traffic. Seniority
+        about how you work in the office: quiet focus, respectful calls, headphones on, no guest traffic. Seniority
         doesn&apos;t matter — 1–2yr juniors are welcome and most members started at that point in their career.
       </>
     ),
@@ -29,7 +29,7 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: 'Can I bring guests inside?',
     a: (
       <>
-        No. The floor is private. You&apos;re welcome to meet friends/guests <em>outside</em> the compound — there&apos;s a
+        No. The office is private. You&apos;re welcome to meet friends/guests <em>outside</em> the compound — there&apos;s a
         chai stall a minute away.
       </>
     ),
@@ -84,7 +84,7 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
     sub: 'What happens during power cuts?',
     a: (
       <>
-        6KV UPS holds the floor for ~8 hours. Desks, lights, wifi, cable — all stay up. AC, microwave, and printer take
+        6KV UPS holds the office for ~8 hours. Desks, lights, wifi, cable — all stay up. AC, microwave, and printer take
         the hit. Long enough that we&apos;ve never lost a workday.
       </>
     ),
@@ -102,11 +102,11 @@ const FAQ: { q: string; sub: string; a: ReactNode }[] = [
   },
   {
     q: 'summer.heatHandling',
-    sub: 'How does the floor handle Bhilwara summers?',
+    sub: 'How does the office handle Bhilwara summers?',
     a: (
       <>
         AC pre-cooled by 9am so you don&apos;t walk in to a furnace. Covered bike parking — your seat doesn&apos;t
-        scorch through the lunch break. Cold RO water on tap. May–June is the most-loved months on the floor, not the
+        scorch through the lunch break. Cold RO water on tap. May–June is the most-loved months at the office, not the
         most dreaded.
       </>
     ),

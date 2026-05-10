@@ -39,7 +39,7 @@ export default function Pricing() {
               <div className="price-row">
                 <div className="head">
                   <span>
-                    shared <span className="dim">{'// common floor'}</span>
+                    shared <span className="dim">{'// common areas'}</span>
                   </span>
                   <span className="dim">10 items</span>
                 </div>

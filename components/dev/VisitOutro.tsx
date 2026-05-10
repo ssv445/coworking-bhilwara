@@ -4,7 +4,7 @@ export default function VisitOutro() {
       <div className="wrap" style={{ textAlign: 'center', maxWidth: 640 }}>
         <div className="section-label">visit</div>
         <h2 className="section-title display">
-          Ready to see the floor?
+          Ready to see the office?
         </h2>
         <p className="section-sub" style={{ marginInline: 'auto' }}>
           One short message. Pick a day, walk in, work a full day on us — same desk,

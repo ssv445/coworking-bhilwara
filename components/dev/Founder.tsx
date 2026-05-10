@@ -19,7 +19,7 @@ export default function Founder() {
           <span className="muted">at the next desk.</span>
         </h2>
         <p className="section-sub">
-          The floor isn&apos;t run by a landlord. It&apos;s run by a working developer
+          The office isn&apos;t run by a landlord. It&apos;s run by a working developer
           who needed this place for himself first — and who&apos;s on it most days,
           shipping code at the same kind of desk you&apos;d get.
         </p>
@@ -40,7 +40,7 @@ export default function Founder() {
           <div className="host-body">
             <h3 className="host-name">Shyam Verma</h3>
             <p className="host-line">
-              Bhilwara native. Started this floor in 2019 because there was nowhere
+              Bhilwara native. Started this coworking space in 2019 because there was nowhere
               quiet in town to ship from. Six years later, 13 of us share it — and
               I&apos;m still on it most weekdays, writing TypeScript at the same kind
               of desk you&apos;d get.
