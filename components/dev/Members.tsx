@@ -1,7 +1,7 @@
 const CHANGES: { lead: string; body: string }[] = [
   {
     lead: 'Mornings get a shape again.',
-    body: 'The bike leaves the gate at nine. There&apos;s a reason to be ready by then. The week starts looking like a week — Mondays feel like Mondays, Saturday feels earned.',
+    body: "The bike leaves the gate at nine. There's a reason to be ready by then. The week starts looking like a week — Mondays feel like Mondays, Saturday feels earned.",
   },
   {
     lead: 'Camera on. Mic clean. Every time.',
@@ -13,7 +13,7 @@ const CHANGES: { lead: string; body: string }[] = [
   },
   {
     lead: 'The laptop closes at seven.',
-    body: 'You can&apos;t carry the desk home. Work ends when you cross the gate. The bedroom goes back to being a bedroom — and the bed stops being your office.',
+    body: "You can't carry the desk home. Work ends when you cross the gate. The bedroom goes back to being a bedroom — and the bed stops being your office.",
   },
   {
     lead: 'Lunch is with your people again.',
@@ -21,7 +21,7 @@ const CHANGES: { lead: string; body: string }[] = [
   },
   {
     lead: 'You start finishing things again.',
-    body: 'No “bhaiya ek minute” every fifteen minutes. Two-hour blocks that don&apos;t get sliced by the doorbell, the cook, the courier. The PR that sat open all week ships before lunch.',
+    body: "No “bhaiya ek minute” every fifteen minutes. Two-hour blocks that don't get sliced by the doorbell, the cook, the courier. The PR that sat open all week ships before lunch.",
   },
 ];
 
