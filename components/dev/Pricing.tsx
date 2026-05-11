@@ -103,7 +103,7 @@ export default function Pricing() {
               </ul>
               <p className="dim price-flex-note">
                 If you end up here more than 12 days a month, the ₹3,000 monthly seat
-                is the better trade — and it&apos;s yours, with your name on it.
+                is the better trade — and it&apos;s reserved for you, same seat every day.
               </p>
             </div>
           </div>
