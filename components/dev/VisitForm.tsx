@@ -24,7 +24,7 @@ export default function VisitForm() {
       `Hi Shyam — ${intentLabel.toLowerCase()}.\n\n` +
       `Name: ${name.trim()}\n\n` +
       `${query.trim()}\n\n` +
-      `— sent from cowork.shyamverma.com`;
+      `— sent from coworkingspacebhilwara.com`;
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   }

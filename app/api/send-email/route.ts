@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Visit Request <noreply@coworking.shyamverma.com>',
+      from: 'Visit Request <noreply@coworkingspacebhilwara.com>',
       to: ['shyam+coworking@readybytes.in'],
       subject: 'New Visit Request - Coworking Space',
       html: `
