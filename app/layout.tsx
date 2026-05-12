@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { Suspense } from "react"
 import Nav from "../components/dev/Nav"
 import Footer from "../components/dev/Footer"
@@ -27,6 +28,7 @@ export default function RootLayout({
         <VisitModal />
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-WBH7QE7M6Q" />
     </html>
   )
 }
