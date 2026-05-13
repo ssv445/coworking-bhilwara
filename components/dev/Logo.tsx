@@ -8,7 +8,7 @@ export default function Logo({ size = 22, variant = 'header' }: Props) {
   return (
     <img
       src={src}
-      alt="Ready CoWork Bhilwara"
+      alt="Ready CoWorking Space Bhilwara"
       width={size}
       height={size}
       style={{ height: size, width: 'auto', display: 'block' }}

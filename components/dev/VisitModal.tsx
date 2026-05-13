@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import VisitForm from './VisitForm';
+import { CONTACT, telHref } from '@/lib/business';
 
 const HASH = '#visit';
 
@@ -114,7 +115,7 @@ export default function VisitModal() {
         </p>
         <VisitForm />
         <p className="visit-modal-foot dim">
-          Prefer to call? <a href="tel:+919116011130">+91 9116011130</a> · Mon–Sat
+          Prefer to call? <a href={telHref}>{CONTACT.phoneDisplay}</a> · Mon–Sat
         </p>
       </div>
     </div>

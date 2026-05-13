@@ -1,10 +1,11 @@
 import VisitForm from '@/components/VisitForm';
 import { MapPin, Phone, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
+import { CONTACT, ADDRESS, telHref } from '@/lib/business';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Visit | CoWorking Bhilwara',
-  description: 'Schedule a visit to our coworking space in Bhilwara. See our facilities and meet our community before joining.',
+  title: 'Schedule a Visit',
+  description: 'Schedule a visit to Ready CoWorking Space Bhilwara (Subhash Nagar). See our facilities, meet the community, and find your seat before joining.',
 };
 
 export default function VisitPage() {
@@ -53,9 +54,22 @@ export default function VisitPage() {
                       <div>
                         <p className="font-medium text-gray-900">Location</p>
                         <p className="text-gray-600">
-                          67, EAST EXTENSION,<br />
-                          SUBHASH NAGAR, BHILWARA,<br />
-                          RAJASTHAN, INDIA PIN - 311001
+                          {ADDRESS.street},<br />
+                          {ADDRESS.city}, {ADDRESS.region},<br />
+                          India · {ADDRESS.postalCode}
+                        </p>
+                        <p className="text-gray-500 text-sm mt-1">
+                          Plus code:{' '}
+                          <a
+                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                              `${ADDRESS.plusCode} ${ADDRESS.city}`,
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-cyan-500 transition-colors underline"
+                          >
+                            {ADDRESS.plusCode} {ADDRESS.city}
+                          </a>
                         </p>
                       </div>
                     </div>
@@ -65,10 +79,10 @@ export default function VisitPage() {
                       <div>
                         <p className="font-medium text-gray-900">Contact</p>
                         <a
-                          href="tel:+919116011130"
+                          href={telHref}
                           className="text-gray-600 hover:text-cyan-500 transition-colors"
                         >
-                          +91 9116011130
+                          {CONTACT.phoneDisplay}
                         </a>
                       </div>
                     </div>
