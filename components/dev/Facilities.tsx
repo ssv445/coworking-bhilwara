@@ -1,7 +1,7 @@
 const FACILITY_TILES: { name: string; mask: string; meta: string; live?: 'available' | 'live' }[] = [
-  { name: 'Reserved Desk', mask: 'awesome-desk.svg', meta: 'reserved for you · same seat every day', live: 'available' },
+  { name: 'Reserved Desk', mask: 'awesome-desk.svg', meta: 'comfortable chair · same seat every day · reserved for you', live: 'available' },
   { name: 'Personal Locker', mask: 'personal-locker.svg', meta: 'leave the monitor here · stop carrying a backpack home' },
-  { name: 'Gigabit Internet', mask: 'high-speed-internet.svg', meta: 'video calls don\'t freeze · deploys finish fast', live: 'live' },
+  { name: 'High-Speed Internet', mask: 'high-speed-internet.svg', meta: 'video calls don\'t freeze · deploys finish fast', live: 'live' },
   { name: '3 Meeting Rooms', mask: 'meeting-room.svg', meta: 'take the call without the doorbell, the dog, or the cooker' },
   { name: '6 Brainstorm Boards', mask: 'brainstorming-area.svg', meta: 'whiteboards · markers · the messy thinking' },
   { name: 'Powerful AC', mask: 'ac-facility.svg', meta: 'May in Bhilwara is no joke · we handle it' },

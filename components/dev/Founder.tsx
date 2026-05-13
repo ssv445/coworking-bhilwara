@@ -28,7 +28,7 @@ export default function Founder() {
           <div className="host-portrait">
             {HAS_PHOTO ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src="/images/host/shyam.jpg" alt="Shyam — host of Ready CoWork Bhilwara" />
+              <img src="/images/host/shyam.jpg" alt="Shyam — host of Ready CoWorking Space Bhilwara" />
             ) : (
               <div className="host-portrait-fallback" aria-hidden="true">
                 <span className="host-initial">S</span>

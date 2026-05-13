@@ -139,7 +139,7 @@ The following SVG icons have been created based on the website:
 
 **Address**: 67, EAST EXTENSION, SUBHASH NAGAR, BHILWARA, RAJASTHAN, INDIA PIN - 311001
 
-**Phone**: +919116011130
+**Phone**: +919782049418
 
 **WhatsApp**: Available with pre-filled message template
 

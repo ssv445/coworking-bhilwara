@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { WA_NUMBER } from './whatsapp';
+import { waUrl } from '@/lib/business';
 
 const INTENTS: { id: string; label: string; tag: string }[] = [
   { id: 'visit', label: 'Visit the office', tag: 'walking in this week' },
@@ -25,7 +25,7 @@ export default function VisitForm() {
       `Name: ${name.trim()}\n\n` +
       `${query.trim()}\n\n` +
       `— sent from coworkingspacebhilwara.com`;
-    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    const url = waUrl(text);
     window.open(url, '_blank', 'noopener,noreferrer');
   }
 
